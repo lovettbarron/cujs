@@ -1,5 +1,5 @@
 # cu.js
-cu.js (see you) is a library for kinect and webcam to track blobs and center of mass.
+cu.js (see you) is a NodeJS library to track simple objects with Kinect (and webcam) using openCV.
 
 
 ```
