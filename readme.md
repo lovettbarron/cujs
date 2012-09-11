@@ -1,24 +1,9 @@
 # cu.js
-### cu.js (see you) is a library for kinect and webcam to track blobs and center of mass.
-
-Values are normalized
+cu.js (see you) is a library for kinect and webcam to track blobs and center of mass.
 
 
 ```
-v0.1 Kinect binding and json output on poll and new frame
-```
-
-### Example info output
-```
-{
-	camera: kinect
-	, resolution: {
-		x: 640
-		, y: 480
-	}
-	, active: true 
-}
-
+v0.0.1 Just setting up the project, nothing works yet.
 ```
 
 ## Methods
