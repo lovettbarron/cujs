@@ -1,0 +1,14 @@
+{
+    "name": "cu.js"
+	, "description": "Easy blob tracking with Kinect/camera for NodeJS"
+	, "homepage": "http://relaystudio.ca"
+	, "author": "Andrew Lovett-Barron (http://readywater.ca)"
+  , "version": "0.0.1"
+  , "private": true
+  , "engines": {
+    "node": "0.6.17"
+  }
+  , "dependencies": {
+
+  }
+}
