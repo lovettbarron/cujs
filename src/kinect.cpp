@@ -4,11 +4,33 @@ using namespace node;
 using namespace v8;
 using namespace opencv;
 
-static Handle<Value> init(const Arguments& args) {
-  return String::New("Kinect successfully connected");
+// Persistent Handle<Value> init(int * deviceID) {
+//   return String::New("Kinect successfully connected");
+// }
+
+// Persistent Handle<Value> init() {
+// 	init();
+// 	return String::New("Device started")
+// }
+
+cujs::cujs() {
+
 }
 
-extern "C" void init(Handle<Object> target)
+~cujs::cujs() { }
+
+
+void cujs::init(v8::Handle<v8::Object> deviceID) {
+
+}
+
+Handle<Value> isAlive() {
+    HandleScope scope;
+    return scope.Close(isAlive);
+}
+
+
+void RegisterModule(Handle<Object> target)
 {
 	NODE_SET_METHOD(target, "init", init);
 	NODE_SET_METHOD(target, "isAlive", isAlive);
@@ -18,3 +40,5 @@ extern "C" void init(Handle<Object> target)
 	NODE_SET_METHOD(target, "getShape", getShape);
 	NODE_SET_METHOD(target, "close", close);
 }
+
+NODE_MODULE(cujs, RegisterModule);
